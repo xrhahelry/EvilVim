@@ -1,5 +1,7 @@
 # EvilVim
-#### My nvim config written in Lua.
+#### My nvim config written in Lua. This still not complete as not many feature like autocompletion, language servers, avoid commmenting new lines, etc is not available. As I am still not that familiar with lua.
+
+#### You are free to contribute to the project.
 
 # Features
 ####  User packer for plugin management
