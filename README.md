@@ -1,6 +1,5 @@
 # EvilVim
 #### My nvim config written in Lua. This still not complete as not many feature like autocompletion, language servers, avoid commmenting new lines, etc is not available. As I am still not that familiar with lua.
-
 #### You are free to contribute to the project.
 
 # Features
@@ -10,5 +9,5 @@
 ####  Nvim Tree for file explorer
 ####  Lualine for Powerline(evil lualine from their repo)
 ####  Bufferline for buffers
-####  Uses onedarker theme by default
+####  Uses Draculatheme by default(DoomOne and Onedarker theme are available by default)
 ####  ...more will be added very soon

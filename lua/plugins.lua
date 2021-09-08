@@ -35,6 +35,8 @@ return require('packer').startup(function()
 
   --Themes
   use 'LunarVim/onedarker.nvim'
+  use 'NTBBloodbath/doom-one.nvim'
+  use 'Mofiqul/dracula.nvim'
 
   -- Snippents
   use 'hrsh7th/vim-vsnip'
@@ -50,4 +52,10 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  -- Floatterm
+  --use 'voldikss/vim-floaterm'
+
+  -- Sneak
+  --use 'justinmk/vim-sneak'
 end)
