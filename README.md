@@ -3,11 +3,11 @@
 #### You are free to contribute to the project.
 
 # Features
-####  User packer for plugin management
+####  Uses packer for plugin management
 ####  Native Lsp for completion
 ####  Telescope of fuzzy finding and other telescope features
 ####  Nvim Tree for file explorer
 ####  Lualine for Powerline(evil lualine from their repo)
 ####  Bufferline for buffers
-####  Uses Draculatheme by default(DoomOne and Onedarker theme are available by default)
+####  Uses Dracula theme by default(DoomOne and Onedarker theme are available by default)
 ####  ...more will be added very soon

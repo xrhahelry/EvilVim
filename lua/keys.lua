@@ -32,3 +32,7 @@ key('n', '<C-l>', '<C-w>l', { silent = true})
 -- Move block of text in visual mode
 key('x', 'K', ':move \'<-2<CR>gv-gv\'', { noremap = true, silent = true})
 key('x', 'J', ':move \'>+1<CR>gv-gv\'', { noremap = true, silent = true})
+
+-- Better nav for autocomplete
+key('i', 'c-j', '\\<C-n>', {noremap = true, expr = true, silent = true})
+key('i', 'c-k', '\\<C-p>', {noremap = true, expr = true, silent = true})
