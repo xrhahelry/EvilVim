@@ -44,18 +44,9 @@ return require('packer').startup(function()
   -- Colorizer
   use 'norcalli/nvim-colorizer.lua'
 
-  -- Start screen
-  use 'glepnir/dashboard-nvim'
-
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-
-  -- Floatterm
-  --use 'voldikss/vim-floaterm'
-
-  -- Sneak
-  --use 'justinmk/vim-sneak'
 end)
