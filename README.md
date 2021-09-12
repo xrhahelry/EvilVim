@@ -4,10 +4,12 @@
 
 # Features
 ####  Uses packer for plugin management
-####  Native Lsp for completion
+####  Native Lsp for completion with automatic language servers download
+####  Treesitter for syntax highlighting 
 ####  Telescope of fuzzy finding and other telescope features
 ####  Nvim Tree for file explorer
 ####  Lualine for Powerline(evil lualine from their repo)
 ####  Bufferline for buffers
 ####  Uses Dracula theme by default(DoomOne and Onedarker theme are available by default)
+####  Also has color highlight 
 ####  ...more will be added very soon
