@@ -19,7 +19,7 @@ return require('packer').startup(function()
 
     -- Native Lsp
     use {
-        'neovim/nvim-lsp-config',
+        'neovim/nvim-lspconfig',
         'williamboman/nvim-lsp-installer',
     }
     use 'hrsh7th/nvim-compe'
