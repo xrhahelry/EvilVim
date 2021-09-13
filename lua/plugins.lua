@@ -23,6 +23,7 @@ return require('packer').startup(function()
         'williamboman/nvim-lsp-installer',
     }
     use 'hrsh7th/nvim-compe'
+
     -- Statusline
     use {
     'hoob3rt/lualine.nvim',
@@ -30,10 +31,10 @@ return require('packer').startup(function()
     }
 
     -- Bufferline
-    use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'} 
+    use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
     -- Auto pairs
-    use 'windwp/nvim-autopairs' 
+    use 'windwp/nvim-autopairs'
 
     --Themes
     use 'LunarVim/onedarker.nvim'

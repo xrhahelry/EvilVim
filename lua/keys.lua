@@ -10,18 +10,11 @@ key('i', 'kj', '<ESC>', { noremap = true, silent = true })
 key('v', 'jk', '<ESC>', { noremap = true, silent = true })
 key('v', 'kj', '<ESC>', { noremap = true, silent = true })
 
--- File Explorer
-key('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
-
 -- Resizing windows
 key('n', '<M-j>', ':resize -3<CR>', { noremap = true, silent = true})
 key('n', '<M-k>', ':resize +3<CR>', { noremap = true, silent = true})
 key('n', '<M-l>', ':vertical resize -3<CR>', { noremap = true, silent = true})
 key('n', '<M-h>', ':vertical resize +3<CR>', { noremap = true, silent = true})
-
--- Switching buffers
-key('n', '<TAB>', ':bnext<CR>', { noremap = true, silent = true})
-key('n', '<S-TAB>', ':bnext<CR>', { noremap = true, silent = true})
 
 -- Better window navigation
 key('n', '<C-h>', '<C-w>h', { silent = true})

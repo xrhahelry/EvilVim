@@ -2,7 +2,6 @@
 require("plugins")
 require("keys")
 require("settings")
-require("autoload")
 
 -- Plugins
 require("plug-config.nv-compe")
@@ -14,3 +13,4 @@ require("plug-config.nv-telescope")
 require("plug-config.nv-treesitter")
 require("plug-config.nv-nvimtree")
 require("plug-config.nv-ls")
+require("plug-config.nv-lspconfig")
