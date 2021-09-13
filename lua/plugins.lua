@@ -24,6 +24,12 @@ return require('packer').startup(function()
     }
     use 'hrsh7th/nvim-compe'
 
+    --Trouble
+    use {
+      "folke/lsp-trouble.nvim",
+      requires = "kyazdani42/nvim-web-devicons",
+    }
+
     -- Statusline
     use {
     'hoob3rt/lualine.nvim',
@@ -55,6 +61,4 @@ return require('packer').startup(function()
 
     -- Treesitter
     use 'nvim-treesitter/nvim-treesitter'
-
-    -- Formatter
 end)

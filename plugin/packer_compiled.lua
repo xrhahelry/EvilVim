@@ -81,6 +81,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim"
   },
+  ["lsp-trouble.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-trouble.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim"
