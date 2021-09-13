@@ -16,3 +16,4 @@ local key = vim.api.nvim_set_keymap
 
 key('n', '<TAB>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true})
 key('n', '<S-TAB>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true})
+key('n', '<Leader>w', ':BufferLineCloseRight<CR>', { noremap = true, silent = true})
