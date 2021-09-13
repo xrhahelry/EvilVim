@@ -50,4 +50,3 @@ local cmd = vim.cmd
 cmd[[hi LspDiagnosticsVirtualTextError guifg=Red ctermfg=Red]]
 cmd[[hi LspDiagnosticsVirtualTextWarning guifg=Cyan ctermfg=Cyan]]
 cmd[[hi LspDiagnosticsVirtualTextHint guifg=Green ctermfg=Green]]
-cmd[[hi LspDiagnosticsVirtualTextInformation guifg=Purple ctermfg=Purple]]
