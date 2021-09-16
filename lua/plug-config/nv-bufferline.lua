@@ -1,6 +1,6 @@
 require('bufferline').setup {
   options = {
-    indicator_icon = '▎',
+    indicator_icon = '┃',
     buffer_close_icon = '',
     modified_icon = '●',
     close_icon = '',
@@ -16,4 +16,4 @@ local key = vim.api.nvim_set_keymap
 
 key('n', '<TAB>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true})
 key('n', '<S-TAB>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true})
-key('n', '<Leader>w', ':BufferLineCloseRight<CR>', { noremap = true, silent = true})
+key('n', '<Leader>w', ':BufferLinePickClose<CR>', { noremap = true, silent = true})

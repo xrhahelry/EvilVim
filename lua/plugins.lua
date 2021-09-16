@@ -1,28 +1,11 @@
-local execute = vim.api.nvim_command
 local fn = vim.fn
 
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
-  execute "packadd packer.nvim"
+  fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  vim.cmd 'packadd packer.nvim'
 end
-
-local packer_ok, packer = pcall(require, "packer")
-if not packer_ok then
-  return
-end
-
-packer.init {
-  git = { clone_timeout = 300 },
-  display = {
-    open_fn = function()
-      return require("packer.util").float { border = "single" }
-    end,
-  },
-}
-
-vim.cmd "autocmd BufWritePost plugins.lua PackerCompile"
 
 return require('packer').startup(function()
     -- Packer can manage itself
@@ -86,4 +69,8 @@ return require('packer').startup(function()
 
     -- Formatter
     use 'sbdchd/neoformat'
+
+    -- Comment
+    use 'terrortylor/nvim-comment'
+
 end)
