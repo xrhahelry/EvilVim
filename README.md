@@ -5,12 +5,14 @@
 # Features
 ####  Uses packer for plugin management
 ####  Native Lsp for completion with automatic language servers download
+####  Vim-vsnip for snippets with preview with completion.nvim
 ####  Trouble for viewing errors in the code
 ####  Treesitter for syntax highlighting
 ####  Telescope of fuzzy finding and other telescope features
 ####  Nvim Tree for file explorer
 ####  Lualine for Statusline(evil lualine from their repo)
 ####  Bufferline for buffers
-####  Uses Dracula theme by default(DoomOne and Onedarker theme are available by default)
-####  Also has color highlight
+####  Popular themes like Dracula, Onedarker and Nvcode(vscode like) out of the box
+####  Color highlight
+####  Autocomment toggler
 ####  ...more will be added very soon
