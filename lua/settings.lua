@@ -1,6 +1,7 @@
 local o = vim.o
 local exec = vim.api.nvim_exec
 local cmd = vim.cmd
+local g = vim.g
 
 -- General
 o.mouse = 'a'
@@ -21,14 +22,14 @@ o.cursorline = true
 o.ignorecase = true
 o.smartcase = true
 o.foldmethod = 'marker'
-o.colorcolumn = '100'
 o.wrap = false
 o.pumheight = 25
 o.background = "dark"
 
 -- Colorscheme
 o.termguicolors = true
-cmd[[colorscheme dracula]]
+g.nvcode_termcolors = 256
+cmd[[colorscheme nvcode]]
 
 -- Memory and CPU
 o.hidden = true
