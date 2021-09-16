@@ -50,7 +50,7 @@ telescope.setup {
   },
 }
 
-vim.api.nvim_set_keymap('n', '<Leader>x', ':LspTroubleToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>xx', ':LspTroubleToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>xw', ':LspTroubleToggle lsp_workspace_diagnostics<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>xq', ':LspTroubleToggle quickfix<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gR', ':LspTroubleToggle lsp_references<CR>', { noremap = true, silent = true })
