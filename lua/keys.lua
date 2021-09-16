@@ -3,18 +3,19 @@ vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', { noremap = true, silent = true
 vim.g.mapleader = ' '
 
 local key = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
 
 -- ESC is fucking trash
-key('i', 'jk', '<ESC>', { noremap = true, silent = true })
-key('i', 'kj', '<ESC>', { noremap = true, silent = true })
-key('v', 'jk', '<ESC>', { noremap = true, silent = true })
-key('v', 'kj', '<ESC>', { noremap = true, silent = true })
+key('i', 'jk', '<ESC>', opts)
+key('i', 'kj', '<ESC>', opts)
+key('v', 'jk', '<ESC>', opts)
+key('v', 'kj', '<ESC>', opts)
 
 -- Resizing windows
-key('n', '<M-j>', ':resize -3<CR>', { noremap = true, silent = true})
-key('n', '<M-k>', ':resize +3<CR>', { noremap = true, silent = true})
-key('n', '<M-l>', ':vertical resize -3<CR>', { noremap = true, silent = true})
-key('n', '<M-h>', ':vertical resize +3<CR>', { noremap = true, silent = true})
+key('n', '<M-j>', ':resize -3<CR>', opts)
+key('n', '<M-k>', ':resize +3<CR>', opts)
+key('n', '<M-l>', ':vertical resize -3<CR>', opts)
+key('n', '<M-h>', ':vertical resize +3<CR>', opts)
 
 -- Better window navigation
 key('n', '<C-h>', '<C-w>h', { silent = true})
@@ -23,9 +24,9 @@ key('n', '<C-k>', '<C-w>k', { silent = true})
 key('n', '<C-l>', '<C-w>l', { silent = true})
 
 -- Move block of text in visual mode
-key('x', 'K', ':move \'<-2<CR>gv-gv\'', { noremap = true, silent = true})
-key('x', 'J', ':move \'>+1<CR>gv-gv\'', { noremap = true, silent = true})
+key('x', 'K', ':move \'<-2<CR>gv-gv\'', opts)
+key('x', 'J', ':move \'>+1<CR>gv-gv\'', opts)
 
--- Better nav for autocomplete
-key('i', 'c-j', '\\<C-n>', {noremap = true, expr = true, silent = true})
-key('i', 'c-k', '\\<C-p>', {noremap = true, expr = true, silent = true})
+-- Page up and down
+key('n', 'n', '<C-d>', opts)
+key('n', 'm', '<C-u>', opts)
