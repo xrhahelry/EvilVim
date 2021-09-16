@@ -73,4 +73,6 @@ return require('packer').startup(function()
     -- Comment
     use 'terrortylor/nvim-comment'
 
+    -- Which Key
+    use 'folke/which-key.nvim'
 end)
