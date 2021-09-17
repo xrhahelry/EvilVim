@@ -109,6 +109,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment"
+  },
   ["nvim-compe"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-compe"
@@ -137,6 +141,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedarker.nvim"
   },
+  ["orgmode.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\orgmode.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim"
@@ -156,6 +164,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim"
   }
 }
 

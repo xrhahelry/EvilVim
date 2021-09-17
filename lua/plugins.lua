@@ -24,8 +24,11 @@ return require('packer').startup(function()
     }
 
     -- Autocompletion
-    use 'hrsh7th/nvim-compe'
     use 'nvim-lua/completion-nvim'
+    use 'hrsh7th/nvim-compe'
+
+    -- Snippents
+    use 'hrsh7th/vim-vsnip'
 
     --Trouble
     use {
@@ -51,9 +54,6 @@ return require('packer').startup(function()
     use 'Mofiqul/dracula.nvim'
     use 'christianchiarulli/nvcode-color-schemes.vim'
 
-    -- Snippents
-    use 'hrsh7th/vim-vsnip'
-
     -- Colorizer
     use 'norcalli/nvim-colorizer.lua'
 
@@ -75,4 +75,7 @@ return require('packer').startup(function()
 
     -- Which Key
     use 'folke/which-key.nvim'
+
+    -- Org Mode
+    use 'kristijanhusak/orgmode.nvim'
 end)

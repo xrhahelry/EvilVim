@@ -1,3 +1,10 @@
+require("telescope").setup{
+    defaults = {
+        prompt_prefix = " ",
+        selection_caret = " "
+    }
+}
+
 local key = vim.api.nvim_set_keymap
 
 key('n', '<Leader>tf', ':Telescope find_files<CR>', { noremap = true, silent = true })
