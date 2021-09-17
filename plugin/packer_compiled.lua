@@ -141,6 +141,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedarker.nvim"
   },
+  ["org-bullets.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\org-bullets.nvim"
+  },
   ["orgmode.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\orgmode.nvim"

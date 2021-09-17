@@ -8,74 +8,68 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function()
+  use {
     -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+   'wbthomason/packer.nvim',
 
     -- File Explorer
-    use {
     'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons'
-    }
+
+    -- Icons
+    'kyazdani42/nvim-web-devicons',
 
     -- Native Lsp
-    use {
-        'neovim/nvim-lspconfig',
-        'williamboman/nvim-lsp-installer',
-    }
+    'neovim/nvim-lspconfig',
+    'williamboman/nvim-lsp-installer',
 
     -- Autocompletion
-    use 'nvim-lua/completion-nvim'
-    use 'hrsh7th/nvim-compe'
+    'nvim-lua/completion-nvim',
+    'hrsh7th/nvim-compe',
 
     -- Snippents
-    use 'hrsh7th/vim-vsnip'
+    'hrsh7th/vim-vsnip',
 
     --Trouble
-    use {
       "folke/lsp-trouble.nvim",
-      requires = "kyazdani42/nvim-web-devicons",
-    }
 
     -- Statusline
-    use {
     'hoob3rt/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-    }
 
     -- Bufferline
-    use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+    'akinsho/bufferline.nvim',
 
     -- Auto pairs
-    use 'windwp/nvim-autopairs'
+    'windwp/nvim-autopairs',
 
     --Themes
-    use 'LunarVim/onedarker.nvim'
-    use 'NTBBloodbath/doom-one.nvim'
-    use 'Mofiqul/dracula.nvim'
-    use 'christianchiarulli/nvcode-color-schemes.vim'
+    'LunarVim/onedarker.nvim',
+    'NTBBloodbath/doom-one.nvim',
+    'Mofiqul/dracula.nvim',
+    'christianchiarulli/nvcode-color-schemes.vim',
 
     -- Colorizer
-    use 'norcalli/nvim-colorizer.lua'
+    'norcalli/nvim-colorizer.lua',
 
     -- Telescope
-    use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
-    }
-    use 'nvim-lua/popup.nvim'
+    'nvim-lua/plenary.nvim',
+    'nvim-lua/popup.nvim',
 
     -- Treesitter
-    use 'nvim-treesitter/nvim-treesitter'
+    'nvim-treesitter/nvim-treesitter',
 
     -- Formatter
-    use 'sbdchd/neoformat'
+    'sbdchd/neoformat',
 
     -- Comment
-    use 'terrortylor/nvim-comment'
+    'terrortylor/nvim-comment',
 
     -- Which Key
-    use 'folke/which-key.nvim'
+    'folke/which-key.nvim',
 
     -- Org Mode
-    use 'kristijanhusak/orgmode.nvim'
+    'kristijanhusak/orgmode.nvim',
+    'akinsho/org-bullets.nvim',
+    'lukas-reineke/headlines.nvim',
+  }
 end)
