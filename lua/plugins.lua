@@ -68,8 +68,8 @@ return require('packer').startup(function()
     'folke/which-key.nvim',
 
     -- Org Mode
-    'kristijanhusak/orgmode.nvim',
-    'akinsho/org-bullets.nvim',
-    'lukas-reineke/headlines.nvim',
+    -- 'kristijanhusak/orgmode.nvim',
+    -- 'akinsho/org-bullets.nvim',
+    -- 'lukas-reineke/headlines.nvim',
   }
 end)
