@@ -8,6 +8,9 @@ o.mouse = 'a'
 o.clipboard = "unnamedplus"
 o.swapfile = false
 
+-- Changing the default shell
+o.shell = 'bash.exe'
+
 -- Ui and Editor
 o.syntax = 'enable'
 o.nu = true
