@@ -15,4 +15,3 @@
 ####  Popular themes like Dracula, Onedarker and Nvcode(vscode like) out of the box
 ####  Color highlight
 ####  Autocomment toggler
-####  ...more will be added very soon
