@@ -2,8 +2,8 @@ local lualine = require 'lualine'
 
 -- Color table for highlights
 local colors = {
-  bg = '#202328',
-  --bg = '#1E1E1E',
+  -- bg = '#202328',
+  bg = '#3c3836',
   fg = '#bbc2cf',
   yellow = '#ECBE7B',
   cyan = '#008080',
@@ -32,8 +32,8 @@ local config = {
     -- Disable sections and component separators
     component_separators = "",
     section_separators = "",
-    --theme = "onedarker"
-    ---[[
+    theme = "gruvbox"
+    --[[
     theme = {
       -- We are going to use lualine_c an lualine_x as left and
       -- right section. Both are highlighted by c theme .  So we
@@ -76,7 +76,7 @@ end
 
 ins_left {
   function() return '▊' end,
-  color = {fg = colors.blue}, -- Sets highlighting of component
+  color = {fg = colors.yellow}, -- Sets highlighting of component
   left_padding = 0 -- We don't need space before this
 }
 
@@ -108,7 +108,7 @@ ins_left {
     }
     vim.api.nvim_command(
         'hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. " guibg=" ..
-            colors.bg)
+            colors.bgg)
     return ''
   end,
   color = "LualineMode",
@@ -214,7 +214,7 @@ ins_right {
 
 ins_right {
   function() return '▊' end,
-  color = {fg = colors.blue},
+  color = {fg = colors.yellow},
   right_padding = 0
 }
 
