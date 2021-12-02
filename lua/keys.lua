@@ -30,3 +30,8 @@ key('x', 'J', ':move \'>+1<CR>gv-gv\'', opts)
 -- Page up and down
 key('n', 'n', '<C-d>', opts)
 key('n', 'm', '<C-u>', opts)
+
+-- Buffer
+key('n', '<Leader>bn', ':bnext<CR>', opts)
+key('n', '<Leader>bp', ':bprevious<CR>', opts)
+key('n', '<Leader>bk', ':bdelete<CR>', opts)

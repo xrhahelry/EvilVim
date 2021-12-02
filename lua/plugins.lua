@@ -12,9 +12,6 @@ return require('packer').startup(function()
     -- Packer can manage itself
    'wbthomason/packer.nvim',
 
-    -- File Explorer
-    'kyazdani42/nvim-tree.lua',
-
     -- Icons
     'kyazdani42/nvim-web-devicons',
 
@@ -35,9 +32,6 @@ return require('packer').startup(function()
     -- Statusline
     'hoob3rt/lualine.nvim',
 
-    -- Bufferline
-    'akinsho/bufferline.nvim',
-
     -- Auto pairs
     'windwp/nvim-autopairs',
 
@@ -57,9 +51,6 @@ return require('packer').startup(function()
 
     -- Treesitter
     'nvim-treesitter/nvim-treesitter',
-
-    -- Formatter
-    'sbdchd/neoformat',
 
     -- Comment
     'terrortylor/nvim-comment',

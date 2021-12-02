@@ -32,7 +32,7 @@ o.background = "dark"
 -- Colorscheme
 o.termguicolors = true
 g.nvcode_termcolors = 256
-cmd[[colorscheme nvcode]]
+cmd[[colorscheme doom-one]]
 
 -- Memory and CPU
 o.hidden = true
@@ -51,7 +51,7 @@ o.smarttab = true
 o.expandtab = true
 o.smartindent = true
 o.autoindent = true
-o.showtabline = 2
+-- o.showtabline = 2
 
 -- Statustine
 o.ruler = false
