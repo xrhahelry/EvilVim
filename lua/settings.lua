@@ -9,7 +9,7 @@ o.clipboard = "unnamedplus"
 o.swapfile = false
 
 -- Changing the default shell
-o.shell = 'bash.exe'
+o.shell = 'C:\\Program Files\\Git\\bin\\bash.exe'
 
 -- Ui and Editor
 o.syntax = 'enable'

@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -69,101 +69,115 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim"
-  },
   ["completion-nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\completion-nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\completion-nvim",
+    url = "https://github.com/nvim-lua/completion-nvim"
   },
   ["doom-one.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\doom-one.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\doom-one.nvim",
+    url = "https://github.com/NTBBloodbath/doom-one.nvim"
   },
   ["dracula.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["lsp-trouble.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-trouble.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-trouble.nvim",
+    url = "https://github.com/folke/lsp-trouble.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/hoob3rt/lualine.nvim"
   },
-  neoformat = {
+  neorg = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoformat"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neorg",
+    url = "https://github.com/nvim-neorg/neorg"
   },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvcode-color-schemes.vim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvcode-color-schemes.vim",
+    url = "https://github.com/christianchiarulli/nvcode-color-schemes.vim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-compe"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-compe"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-compe",
+    url = "https://github.com/hrsh7th/nvim-compe"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedarker.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedarker.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedarker.nvim",
+    url = "https://github.com/LunarVim/onedarker.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   },
   ["which-key.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
