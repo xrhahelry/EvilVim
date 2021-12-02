@@ -29,9 +29,15 @@ o.wrap = false
 o.pumheight = 25
 o.background = "dark"
 
+-- Cursor
+exec([[
+  highlight Cursor guifg=white guibg=white
+  highlight iCursor guifg=white guibg=white
+  set guicursor=n-v-c-i:block-Cursor
+]], false)
+
 -- Colorscheme
 o.termguicolors = true
-g.nvcode_termcolors = 256
 cmd[[colorscheme gruvbox]]
 
 -- Memory and CPU
@@ -51,7 +57,6 @@ o.smarttab = true
 o.expandtab = true
 o.smartindent = true
 o.autoindent = true
--- o.showtabline = 2
 
 -- Statustine
 o.ruler = false
@@ -72,4 +77,10 @@ exec([[
     autocmd!
     autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
   augroup end
+]], false)
+
+-- Org
+exec([[
+  au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+  au BufEnter *.org            call org#SetOrgFileType()
 ]], false)
