@@ -108,7 +108,7 @@ ins_left {
     }
     vim.api.nvim_command(
         'hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. " guibg=" ..
-            colors.bgg)
+            colors.bg)
     return ''
   end,
   color = "LualineMode",
