@@ -35,3 +35,9 @@ key('n', 'm', '<C-u>', opts)
 key('n', '<Leader>bn', ':bnext<CR>', opts)
 key('n', '<Leader>bp', ':bprevious<CR>', opts)
 key('n', '<Leader>bk', ':bdelete<CR>', opts)
+
+-- Line movement
+key('n', 'H', '0', opts)
+key('n', 'L', '$', opts)
+key('v', 'H', '0', opts)
+key('v', 'L', '$', opts)
