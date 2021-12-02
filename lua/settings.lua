@@ -32,7 +32,7 @@ o.background = "dark"
 -- Colorscheme
 o.termguicolors = true
 g.nvcode_termcolors = 256
-cmd[[colorscheme doom-one]]
+cmd[[colorscheme gruvbox]]
 
 -- Memory and CPU
 o.hidden = true

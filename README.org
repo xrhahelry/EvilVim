@@ -4,14 +4,12 @@
    You are free to contribute to the project.
 
 ** Features
-  -  Uses packer for plugin management
-  -  Native Lsp for completion with automatic language servers download
-  -  Vim-vsnip for snippets with preview with completion.nvim
-  -  Trouble for viewing errors in the code
-  -  Treesitter for syntax highlighting
-  -  Telescope of fuzzy finding and other telescope features
-  -  Lualine for Statusline(evil lualine from their repo)
-  -  Uses Doom-one colorscheme
-  -  Popular themes like Dracula, Onedarker, Nvcode(vscode like) out of the box
-  -  Color highlight
-  -  Autocomment toggler
+  - Uses packer for plugin management
+  - Native Lsp for completion with automatic language servers download
+  - Vim-vsnip for snippets with preview with completion.nvim
+  - Trouble for viewing errors in the code
+  - Treesitter for syntax highlighting
+  - Telescope of fuzzy finding and other telescope features
+  - Lualine for Statusline(evil lualine from their repo)
+  - Color highlight
+  - Autocomment toggler

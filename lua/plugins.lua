@@ -40,6 +40,8 @@ return require('packer').startup(function()
     'NTBBloodbath/doom-one.nvim',
     'Mofiqul/dracula.nvim',
     'christianchiarulli/nvcode-color-schemes.vim',
+    'ellisonleao/gruvbox.nvim',
+    'rktjmp/lush.nvim',
 
     -- Colorizer
     'norcalli/nvim-colorizer.lua',
