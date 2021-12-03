@@ -78,9 +78,3 @@ exec([[
     autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
   augroup end
 ]], false)
-
--- Org
-exec([[
-  au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
-  au BufEnter *.org            call org#SetOrgFileType()
-]], false)

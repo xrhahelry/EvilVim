@@ -59,8 +59,5 @@ return require('packer').startup(function()
 
     -- Which Key
     'folke/which-key.nvim',
-
-    -- Org mode
-    'nvim-orgmode/orgmode'
   }
 end)

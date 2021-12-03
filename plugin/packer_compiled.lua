@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["lsp-trouble.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-trouble.nvim",
@@ -94,10 +99,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/hoob3rt/lualine.nvim"
   },
-  neorg = {
+  ["lush.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neorg",
-    url = "https://github.com/nvim-neorg/neorg"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
