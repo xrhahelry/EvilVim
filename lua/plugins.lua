@@ -48,5 +48,9 @@ return require('packer').startup(function()
 
     -- Statusline
     'nvim-lualine/lualine.nvim',
+
+    -- Lorem
+    'derektata/lorem.nvim',
+    'vim-scripts/loremipsum',
   }
 end)

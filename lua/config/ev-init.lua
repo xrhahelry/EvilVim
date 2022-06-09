@@ -1,0 +1,1 @@
+require"lorem-nvim".setup()
