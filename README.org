@@ -7,9 +7,7 @@
   - Uses packer for plugin management
   - Native Lsp for completion with automatic language servers download
   - Vim-vsnip for snippets with preview with completion.nvim
-  - Trouble for viewing errors in the code
   - Treesitter for syntax highlighting
   - Telescope of fuzzy finding and other telescope features
-  - Lualine for Statusline(evil lualine from their repo)
-  - Color highlight
+  - Lualine for Statusline
   - Autocomment toggler
