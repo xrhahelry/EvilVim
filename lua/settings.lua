@@ -11,7 +11,7 @@ o.swapfile = false
 -- Ui and Editor
 o.syntax = 'enable'
 o.nu = true
-o.rnu = true
+-- o.rnu = true
 o.showmatch = true
 o.encoding = 'utf-8'
 o.fileencoding = 'utf-8'
@@ -26,17 +26,15 @@ o.wrap = false
 o.pumheight = 25
 o.background = "dark"
 
--- Cursor
-exec([[
-  highlight Cursor guifg=white guibg=white
-  highlight iCursor guifg=white guibg=white
-  set guicursor=n-v-c-i:block-Cursor
-]], false)
-
 -- Colorscheme
 o.termguicolors = true
 g.material_style = "palenight"
 cmd[[colorscheme material]]
+
+-- Cursor
+exec([[
+  set guicursor=n-v-c-i:block-Cursor
+]], false)
 
 -- Memory and CPU
 o.hidden = true
