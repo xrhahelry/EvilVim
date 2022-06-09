@@ -18,10 +18,10 @@ key('n', '<M-l>', ':vertical resize -3<CR>', opts)
 key('n', '<M-h>', ':vertical resize +3<CR>', opts)
 
 -- Better window navigation
-key('n', '<C-h>', '<C-w>h', { silent = true})
-key('n', '<C-j>', '<C-w>j', { silent = true})
-key('n', '<C-k>', '<C-w>k', { silent = true})
-key('n', '<C-l>', '<C-w>l', { silent = true})
+key('n', '<Leader>wh', '<C-w>h', { silent = true})
+key('n', '<Leader>wj', '<C-w>j', { silent = true})
+key('n', '<Leader>wk', '<C-w>k', { silent = true})
+key('n', '<Leader>wl', '<C-w>l', { silent = true})
 
 -- Move block of text in visual mode
 key('x', 'K', ':move \'<-2<CR>gv-gv\'', opts)
@@ -37,7 +37,7 @@ key('n', '<Leader>bp', ':bprevious<CR>', opts)
 key('n', '<Leader>bk', ':bdelete<CR>', opts)
 
 -- Line movement
-key('n', 'H', '0', opts)
+key('n', 'H', '^', opts)
 key('n', 'L', '$', opts)
-key('v', 'H', '0', opts)
+key('v', 'H', '^', opts)
 key('v', 'L', '$', opts)

@@ -1,5 +1,4 @@
-require("telescope").setup{
-    defaults = {
+require("telescope").setup{ defaults = {
         prompt_prefix = "❯ ",
         selection_caret = " "
     }

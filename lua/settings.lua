@@ -8,9 +8,6 @@ o.mouse = 'a'
 o.clipboard = "unnamedplus"
 o.swapfile = false
 
--- Changing the default shell
-o.shell = 'C:\\Program Files\\Git\\bin\\bash.exe'
-
 -- Ui and Editor
 o.syntax = 'enable'
 o.nu = true
@@ -38,7 +35,8 @@ exec([[
 
 -- Colorscheme
 o.termguicolors = true
-cmd[[colorscheme gruvbox]]
+g.material_style = "palenight"
+cmd[[colorscheme material]]
 
 -- Memory and CPU
 o.hidden = true

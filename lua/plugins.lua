@@ -26,25 +26,8 @@ return require('packer').startup(function()
     -- Snippents
     'hrsh7th/vim-vsnip',
 
-    --Trouble
-      "folke/lsp-trouble.nvim",
-
-    -- Statusline
-    'hoob3rt/lualine.nvim',
-
     -- Auto pairs
     'windwp/nvim-autopairs',
-
-    --Themes
-    'LunarVim/onedarker.nvim',
-    'NTBBloodbath/doom-one.nvim',
-    'Mofiqul/dracula.nvim',
-    'christianchiarulli/nvcode-color-schemes.vim',
-    'ellisonleao/gruvbox.nvim',
-    'rktjmp/lush.nvim',
-
-    -- Colorizer
-    'norcalli/nvim-colorizer.lua',
 
     -- Telescope
     'nvim-telescope/telescope.nvim',
@@ -59,5 +42,11 @@ return require('packer').startup(function()
 
     -- Which Key
     'folke/which-key.nvim',
+
+    -- Color Scheme
+    'marko-cerovac/material.nvim',
+
+    -- Statusline
+    'nvim-lualine/lualine.nvim',
   }
 end)
