@@ -74,50 +74,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\completion-nvim",
     url = "https://github.com/nvim-lua/completion-nvim"
   },
-  ["doom-one.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\doom-one.nvim",
-    url = "https://github.com/NTBBloodbath/doom-one.nvim"
-  },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
-  ["lsp-trouble.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-trouble.nvim",
-    url = "https://github.com/folke/lsp-trouble.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
-    url = "https://github.com/hoob3rt/lualine.nvim"
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["lush.nvim"] = {
+  ["material.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
-  },
-  ["nvcode-color-schemes.vim"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvcode-color-schemes.vim",
-    url = "https://github.com/christianchiarulli/nvcode-color-schemes.vim"
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
-  },
-  ["nvim-colorizer.lua"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua",
-    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     loaded = true,
@@ -139,6 +109,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
@@ -148,11 +123,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
-  ["onedarker.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Sujal Bajracharya\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedarker.nvim",
-    url = "https://github.com/LunarVim/onedarker.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -192,5 +162,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end
