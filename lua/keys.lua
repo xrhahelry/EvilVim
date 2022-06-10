@@ -41,3 +41,7 @@ key('n', 'H', '^', opts)
 key('n', 'L', '$', opts)
 key('v', 'H', '^', opts)
 key('v', 'L', '$', opts)
+
+-- Better splits
+key('n', '<Leader>sv', ':vsplit<cr>', { silent = true})
+key('n', '<Leader>sh', ':split<cr>', { silent = true})
