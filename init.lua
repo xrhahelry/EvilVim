@@ -1,7 +1,9 @@
 --General
-require("plugins")
-require("keys")
-require("settings")
+require("user.plugins")
+require("user.keys")
+require("user.settings")
+-- require("user.winbar")
+-- require("user.autocommands")
 
 -- Plugins
 require("config.ev-compe")
@@ -16,3 +18,4 @@ require("config.ev-comment")
 require("config.ev-whichkey")
 require("config.ev-init")
 require("config.ev-nvimtree")
+require("config.ev-gps")

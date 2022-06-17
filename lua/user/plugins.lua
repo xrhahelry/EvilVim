@@ -45,6 +45,8 @@ return require('packer').startup(function()
 
     -- Color Scheme
     'marko-cerovac/material.nvim',
+    'morhetz/gruvbox',
+    'sainnhe/gruvbox-material',
 
     -- Statusline
     'nvim-lualine/lualine.nvim',
@@ -55,5 +57,8 @@ return require('packer').startup(function()
     -- Org mode
     'nvim-orgmode/orgmode',
     'akinsho/org-bullets.nvim',
+
+    -- Gps
+    'SmiteshP/nvim-gps',
   }
 end)

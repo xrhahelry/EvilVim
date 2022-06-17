@@ -32,9 +32,9 @@ g.material_style = "palenight"
 cmd[[colorscheme material]]
 
 -- Cursor
-exec([[
-  set guicursor=n-v-c-i:block-Cursor
-]], false)
+-- exec([[
+--   set guicursor=n-v-c-i:block-Cursor
+-- ]], false)
 
 -- Memory and CPU
 o.hidden = true
@@ -57,7 +57,7 @@ o.autoindent = true
 -- Statustine
 o.ruler = false
 o.cmdheight = 2
-o.laststatus = 2
+o.laststatus = 3
 o.showmode = false
 
 -- Autocompletion
