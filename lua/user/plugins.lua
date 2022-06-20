@@ -10,7 +10,7 @@ end
 return require('packer').startup(function()
   use {
     -- Packer can manage itself
-   'wbthomason/packer.nvim',
+    'wbthomason/packer.nvim',
 
     -- Icons
     'kyazdani42/nvim-web-devicons',
@@ -31,6 +31,7 @@ return require('packer').startup(function()
 
     -- Telescope
     'nvim-telescope/telescope.nvim',
+    "nvim-telescope/telescope-file-browser.nvim",
     'nvim-lua/plenary.nvim',
     'nvim-lua/popup.nvim',
 

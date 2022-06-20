@@ -28,7 +28,8 @@ wk.register({
     name = "Telescope",
     c = {"<cmd>Telescope colorscheme<cr>", "change colorscheme"},
     g = {"<cmd>Telescope git_commits<cr>", "view commits"},
-    f = {"<cmd>Telescope oldfiles<cr>", "history"},
+    o = {"<cmd>Telescope oldfiles<cr>", "history"},
+    f = {"<cmd>Telescope file_browser<cr>", "file browser"},
   },
   w = {
     name = "Window",
