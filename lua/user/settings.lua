@@ -26,6 +26,11 @@ o.wrap = false
 o.pumheight = 25
 o.background = "dark"
 
+-- Neovide
+o.guifont = "JetBrainsMono NF:h12"
+g.neovide_transparency = 0.9
+g.neovide_refresh_rate = 140
+
 -- Colorscheme
 o.termguicolors = true
 g.material_style = "palenight"

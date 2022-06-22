@@ -48,6 +48,7 @@ return require('packer').startup(function()
     'marko-cerovac/material.nvim',
     'morhetz/gruvbox',
     'sainnhe/gruvbox-material',
+    'rafi/awesome-vim-colorschemes',
 
     -- Statusline
     'nvim-lualine/lualine.nvim',
@@ -61,5 +62,11 @@ return require('packer').startup(function()
 
     -- Gps
     'SmiteshP/nvim-gps',
+
+    -- Tagbar
+    'preservim/tagbar',
+
+    -- Terminal
+    'tc50cal/vim-terminal',
   }
 end)
