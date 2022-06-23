@@ -56,10 +56,6 @@ return require('packer').startup(function()
     -- File Explorer
     'kyazdani42/nvim-tree.lua',
 
-    -- Org mode
-    'nvim-orgmode/orgmode',
-    'akinsho/org-bullets.nvim',
-
     -- Gps
     'SmiteshP/nvim-gps',
 
