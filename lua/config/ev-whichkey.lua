@@ -37,6 +37,7 @@ wk.register({
     j = {"<C-w>j", "move focus down"},
     k = {"<C-w>k", "move focus up"},
     l = {"<C-w>l", "move focus right"},
+    q = {"<cmd>q<cr>", "quit window"},
   },
   b = {
     name = "Buffer",
@@ -48,5 +49,12 @@ wk.register({
   o = {
     name = "Open",
     f = {"<cmd>NvimTreeToggle<cr>", "file explorere"},
+  },
+  p = {
+    name = "Packer",
+    i = {"<cmd>PackerInstall<cr>", "install plugin"},
+    s = {"<cmd>PackerSync<cr>", "sync plugins"},
+    c = {"<cmd>PackerClean<cr>", "uninstall plugin"},
+    v = {"<cmd>PackerStatus<cr>", "view plugin"},
   }
 }, {prefix = "<leader>"})
