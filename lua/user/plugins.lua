@@ -68,5 +68,8 @@ return require('packer').startup(function()
 
     -- Terminal
     'tc50cal/vim-terminal',
+
+    -- Start Screen
+    'goolord/alpha-nvim',
   }
 end)
