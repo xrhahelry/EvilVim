@@ -34,7 +34,7 @@ g.neovide_refresh_rate = 140
 -- Colorscheme
 o.termguicolors = true
 g.material_style = "palenight"
-cmd[[colorscheme material]]
+cmd[[colorscheme dracula]]
 
 -- Cursor
 -- exec([[

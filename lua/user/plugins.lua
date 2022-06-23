@@ -49,6 +49,8 @@ return require('packer').startup(function()
     'morhetz/gruvbox',
     'sainnhe/gruvbox-material',
     'rafi/awesome-vim-colorschemes',
+    'Mofiqul/dracula.nvim',
+    'christianchiarulli/nvcode-color-schemes.vim',
 
     -- Statusline
     'nvim-lualine/lualine.nvim',
