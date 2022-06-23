@@ -28,7 +28,7 @@ o.background = "dark"
 
 -- Neovide
 o.guifont = "JetBrainsMono NF:h12"
-g.neovide_transparency = 0.9
+g.neovide_transparency = 1
 g.neovide_refresh_rate = 140
 
 -- Colorscheme
