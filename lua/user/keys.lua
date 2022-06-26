@@ -33,3 +33,4 @@ key('v', 'L', '$', opts)
 
 -- File finder
 key('n', '<leader>.', ':Telescope find_files<cr>', opts)
+key('n', '<tab>', ':BufferLineCycleNext<cr>', opts)

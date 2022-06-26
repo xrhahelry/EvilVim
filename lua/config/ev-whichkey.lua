@@ -49,6 +49,7 @@ wk.register({
   o = {
     name = "Open",
     f = {"<cmd>NvimTreeToggle<cr>", "file explorere"},
+    l = {"<cmd>LazyGit<cr>", "lazygit"},
   },
   p = {
     name = "Packer",
@@ -56,5 +57,5 @@ wk.register({
     s = {"<cmd>PackerSync<cr>", "sync plugins"},
     c = {"<cmd>PackerClean<cr>", "uninstall plugin"},
     v = {"<cmd>PackerStatus<cr>", "view plugin"},
-  }
+  },
 }, {prefix = "<leader>"})

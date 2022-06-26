@@ -69,5 +69,17 @@ return require('packer').startup(function()
 
     -- Start Screen
     'goolord/alpha-nvim',
-  }
+
+    -- Bufferline
+    'akinsho/bufferline.nvim',
+
+    -- Lazygit
+    'kdheepak/lazygit.nvim',
+
+    -- Autosave
+    'Pocco81/AutoSave.nvim',
+
+    -- Git Signs
+    'lewis6991/gitsigns.nvim',
+    }
 end)
